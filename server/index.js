@@ -1,10 +1,8 @@
 const express = require('express')
-const dotevn = require('dotenv')
 const cors = require('cors')
 const app = express();
 const apiRoutes = require('./routes/api')
 
-dotevn.config()
 
 //Middlewares
 app.use(express.json({ limit: '50mb' }))
